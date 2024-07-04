@@ -1,4 +1,4 @@
-# Embrace Sideboard Page
+# [Embrace Sideboard Page](https://embracesideboardpage.netlify.app/)
 
 This project is a single e-commerce product page for the Embrace Sideboard, featuring interactive elements such as color selection, size options, quantity selector, image carousel, and dynamic discount calculation.
 
