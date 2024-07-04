@@ -448,11 +448,9 @@ body {
 
 .frame-parent5 {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
-}
-
-.frame-parent5 {
   align-items: flex-start;
   gap: var(--gap-2xs);
   font-size: var(--font-size-sm);
@@ -727,8 +725,7 @@ body {
     gap: var(--gap-lg);
     min-width: 100%;
   }
-  .cart-button,
-  .frame-parent5 {
+  .cart-button {
     flex-wrap: wrap;
   }
   .cart-button-parent {
