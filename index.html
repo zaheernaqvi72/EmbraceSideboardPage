@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <div class="default-design">
+      <div class="rect-parent">
+        <img
+          id="main-image"
+          class="rect-icon"
+          loading="lazy"
+          alt=""
+          src="./public/prod_img1.png"
+        />
+        <div class="frame-wrapper">
+          <div class="rectangle-parent">
+            <img
+              class="thumbnail"
+              loading="lazy"
+              alt=""
+              src="./public/prod_img2.png"
+              onclick="showImage(this.src)"
+            />
+            <img
+              class="thumbnail"
+              loading="lazy"
+              alt=""
+              src="./public/prod_img4.png"
+              onclick="showImage(this.src)"
+            />
+            <img
+              class="thumbnail"
+              loading="lazy"
+              alt=""
+              src="./public/prod_img3.png"
+              onclick="showImage(this.src)"
+            />
+            <img
+              class="thumbnail"
+              loading="lazy"
+              alt=""
+              src="./public/prod_img12.png"
+              onclick="showImage(this.src)"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="default-design-inner">
+        <div class="frame-parent">
+          <div class="frame-container">
+            <div class="frame-group">
+              <div class="frame-div">
+                <div class="marmeto-parent">
+                  <a class="marmeto">Marmeto</a>
+                  <h1 class="embrace-sideboard">Embrace Sideboard</h1>
+                </div>
+              </div>
+              <div class="title-divider"></div>
+              <div class="frame-parent1">
+                <div class="frame-parent2">
+                  <div class="description-span-parent">
+                    <b class="description-span" id="discountedPrice" data-price="12999.00">$12999.00</b>
+                    <div class="off-wrapper">
+                      <div class="off" id="discountPercentage"></div>
+                    </div>
+                  </div>
+                  <div class="description-end" id="originalPrice" data-price="19999.00">$19999.00</div>
+                </div>
+                <div class="description-bottom-divider"></div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-wrapper1">
+            <div class="frame-parent3">
+              <div class="color-parent">
+                <div class="color">Choose a Color</div>
+                <div class="frame-parent4">
+                  <div class="color-box-out1">
+                    <button class="color-box clr1" name="clr" value ="Yellow" onclick="showTick(this)"/>
+                  </div>
+                  <div class="color-box-out2">
+                    <button class="color-box clr2" name="clr" value ="Green" onclick="showTick(this)"/>
+                  </div>
+                  <div class="color-box-out3">
+                    <button class="color-box clr3" name="clr" value ="Blue" onclick="showTick(this)"/>
+                  </div>
+                  <div class="color-box-out4">
+                    <button class="color-box clr4" name="clr" value ="Pink" onclick="showTick(this)"/>
+                  </div>
+                </div>
+              </div>
+              <div class="description-bottom-divider"></div>
+              <div class="size-parent">
+                <div class="size">Choose a Size</div>
+                <div class="frame-parent5">
+                  <label class="frame-button">
+                    <input type="radio" name="size" value="small" onchange="changedSize(this)"/>
+                    Small
+                  </label>
+                  <label class="frame-button">
+                    <input type="radio" name="size" value="medium" onchange="changedSize(this)"/>
+                    Medium
+                  </label>
+                  <label class="frame-button">
+                    <input type="radio" name="size" value="large" onchange="changedSize(this)"/>
+                    Large
+                  </label>
+                  <label class="frame-button">
+                    <input type="radio" name="size" value="extra-large" onchange="changedSize(this)"/>
+                    Extra Large
+                  </label>
+                  <label class="frame-button">
+                    <input type="radio" name="size" value="xxl" onchange="changedSize(this)"/>
+                    XXL
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-wrapper2">
+            <div class="cart-button-parent">
+              <div class="cart-button">
+                <div class="rectangle-parent1">
+                  <div class="quantity-separator disabled" id="decrement" onclick="changeQuantity(-1)">
+                    <b class="quantity-delimiter">-</b>
+                  </div>
+                  <b class="quantity-placeholder" id="quantity">1</b>
+                  <div class="quantity-separator1" id="increment" onclick="changeQuantity(1)">
+                    <b class="b">+</b>
+                  </div>
+                </div>
+                <button class="group-button" onclick="addToCart()">
+                  <div class="frame-child11"></div>
+                  <img
+                    class="add-cart-button-bag"
+                    alt=""
+                    src="./public/bag.png"
+                  />
+                  <div class="add-to-cart-wrapper">
+                    <div class="add-to-cart">Add To Cart</div>
+                  </div>
+                </button>
+              </div>
+              <div id="cartMessage"></div>
+              <div class="cart-divider"></div>
+            </div>
+          </div>
+          <h3 class="the-embrace-sideboard-container">
+            <p class="the-embrace-sideboard">
+              The Embrace Sideboard is a stylish wear. With a top cloth designed
+              to provide superior protection and look great, this storage
+              solution is both functional and attractive. It fits seamlessly
+              into any home decor, with clean lines and a timeless look. Crafted
+              from premium materials for a combination of style, durability, and
+              reliability.
+            </p>
+            <p class="blank-line">&nbsp;</p>
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
