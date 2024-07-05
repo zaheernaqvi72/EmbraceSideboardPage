@@ -44,12 +44,13 @@ EmbraceSideboardPage/
 │   ├── prod_img2.png        # Thumbnail image 1
 │   ├── prod_img3.png        # Thumbnail image 2
 │   ├── prod_img4.png        # Thumbnail image 3
+│   ├── prod_img12.png       # Thumbnail image 4
 │   ├── tick.png             # Tick mark image
-│   └── bag.png              # Cart icon image
+│   └── bag.png              # Cart bag icon
 │
 ├── index.html               # Main HTML file for the product page
 │
-├── index.css                # CSS file for styling the product page
+├── styles.css                # CSS file for styling the product page
 │
 ├── script.js                # JavaScript file for interactive functionalities
 │
